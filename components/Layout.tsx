@@ -50,6 +50,13 @@ const Layout = ({children, title = 'This is the default title'}: Props) => (
     </header>
 
     {children}
+
+    <footer>
+      <Container>
+        <hr />
+        The source code for this project is hosted on <a href="https://github.com/misterjoshua/pospesel-propositional-logic-solutions">GitHub</a>.
+      </Container>
+    </footer>
   </div>
 )
 
