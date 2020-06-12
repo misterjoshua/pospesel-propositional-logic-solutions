@@ -10,7 +10,7 @@
   },
   "dependencies": {
     "bootstrap": "^4.4.1",
-    "jquery": "^1.9.1",
+    "jquery": "^3.5.0",
     "next": "latest",
     "popper.js": "^1.16.1",
     "react": "^16.12.0",
