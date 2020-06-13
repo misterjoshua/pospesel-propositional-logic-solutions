@@ -21,29 +21,51 @@ const IndexPage = () => (
   <Layout title="PropLogic Propositional Logic Exercises">
     <Jumbotron>
       <Container>
-        <h1>Propositional Logic Exercise Solutions</h1>
-        <p>This site is a placeholder for what will eventually become the
-          solutions for Howard Pospesel's Propositional Logic book. I am
-          currently waiting for permission to publish the exercises.
+        <h1>Propositional Logic Proofs</h1>
+        <p>This site is a placeholder for what is to become a reference for
+          common logical relationships arising from the use of Howard Pospesel's
+          propositional logic system.
         </p>
-        <p>The text that you see on this page are my solutions and comments on
-          the exercises. However, I'd like to show the exercises alongside
-          these solutions so that it's clearer.
+        <p>The text that you see throughout this site are my proofs, mixed
+          with my commentary on the details. I have several intentions:
         </p>
+        <ul>
+          <li>To introduce interested parties to Howard Pospesel's logical
+            system.
+          </li>
+          <li>To produce a reference for students who are working through the
+            book without a course.
+          </li>
+          <li>To provide proof for all of the derived rules that the book
+            engenders.
+          </li>
+        </ul>
       </Container>
     </Jumbotron>
+
     <Container>
       <Row>
         <Col>
-          <h2>Chapter 1 Exercises</h2>
-          <p>Chapter one introduces the concepts of logical arguments. It
-            discusses both the concepts of argument validity and the the truth
-            of statements.</p>
+          <h2>Notes on Logic</h2>
+          <ul>
+            <li>An argument has form and content.</li>
+            <li>An argument's form is what determines validity.</li>
+            <li>It's not valid to speak of an argument as being true or false.
+            </li>
+            <li>Arguments are composed of statements which are the content of the argument.</li>
+            <li>The statements can be true or false, but not valid/invalid.</li>
+            <li>The only requirement for an argument to be valid is: It must be impossible for
+              the argument to have a true premise and false conclusion.</li>
+          </ul>
 
           <section>
             <h3 id="ch1ex1">1. Arguments in the form P & Q therefore P</h3>
+            <ul>
+              <li>This is a valid argument.</li>
+              <li>We can create all combinations of true or false premises and true or false conclusion, but not a true premise and false conclusion.</li>
+            </ul>
 
-            <ExerciseDescription/>
+            <p>The following table contains all combinations of premises and conclusions with examples:</p>
 
             <Table>
               <thead>
@@ -73,9 +95,10 @@ const IndexPage = () => (
               </tr>
               <tr>
                 <td>True premise, false conclusion</td>
-                <td>This isn't possible. P & Q therefore P is a valid argument.
-                  Because of this, it's not possible for the argument to have a
-                  true premise and false conclusion.
+                <td>This isn't possible. It's straining to think of an example
+                  because it's impossible to. P & Q therefore P is a valid
+                  argument. And because of this, it's not possible for the
+                  argument to have a true premise and false conclusion.
                 </td>
               </tr>
               </tbody>
@@ -83,10 +106,7 @@ const IndexPage = () => (
           </section>
 
           <section>
-            <h3 id="ch1ex2">2. Arguments in the form P & Q therefore P and
-              R</h3>
-
-            <ExerciseDescription/>
+            <h3 id="ch1ex2">2. Arguments in the form P & Q therefore P and R</h3>
 
             <Table>
               <thead>
